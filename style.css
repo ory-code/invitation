@@ -14,7 +14,7 @@ header {
   padding: 40px 100px;
   z-index: 1000;
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
   align-items: center;
 }
 header .logo {
@@ -23,9 +23,9 @@ header .logo {
   font-size: 25px;
 }
 .logo_japon {
-    width: 40px;
-    height: 30px;
-    margin-left: 15px;
+  width: 40px;
+  height: 30px;
+  margin-left: 15px;
 }
 .toggle {
   position: relative;
@@ -84,15 +84,15 @@ header .logo {
   max-width: 1290px;
 }
 .text__content {
-    margin-top: 28px;
-    color: #fff;
+  margin-top: 28px;
+  color: #fff;
 }
 .text__content h4 {
-    font-size: 25px;
+  font-size: 25px;
 }
 .text__content li {
-    margin: 20px 0;
-    font-size: 20px;
+  margin: 20px 0;
+  font-size: 20px;
 }
 .text h2 {
   font-size: 4em;
@@ -128,10 +128,10 @@ header .logo {
   color: #111;
   letter-spacing: 2px;
   transition: 0.2s;
-
+  cursor: pointer;
 }
 .tel {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 .text a:hover {
   letter-spacing: 6px;
@@ -183,11 +183,20 @@ header .logo {
   color: #03a9f4;
 }
 
-@media (max-width: 991px) {
-
-header h2 {
-margin-right: 5px;
+.sms .tel {
+  cursor: pointer;
 }
+
+@media (min-width: 520px) and (max-width: 990px) {
+   a.tel {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  header h2 {
+    margin-right: 5px;
+  }
 
   .showcase,
   .showcase header {
@@ -209,11 +218,4 @@ margin-right: 5px;
   .text h3 {
     font-size: 2em;
   }
-  /* .sms a {
-    width: 130px;
-    height: 130px;
-    background-color: #fff;
-    text-decoration: none;
-    color: black;
-  } */
 }
